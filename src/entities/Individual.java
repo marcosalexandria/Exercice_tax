@@ -16,11 +16,11 @@ public class Individual extends TaxPayer{
 	public Double tax() {
 		Double tax = 0.0;
 		if (anualIncome < 20000 && healthSpending != 0.0) {
-			tax = (anualIncome * 0.15) - (healthSpending - 0.5);
+			tax = (anualIncome * 0.15) - (healthSpending * 0.5);
 		}else if (anualIncome < 20000) {
 			tax = (anualIncome * 0.15);
 		}else if (anualIncome >= 20000 && healthSpending != 0.0) {
-			tax = (anualIncome * 0.25) - (healthSpending - 0.5);
+			tax = (anualIncome * 0.25) - (healthSpending * 0.5);
 		}else if (anualIncome >= 20000) {
 			tax = (anualIncome * 0.25);
 		}
